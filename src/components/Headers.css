@@ -1,0 +1,54 @@
+/* Simple header styles */
+.app-header {
+  --padding-x: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 2rem;
+  height: var(--header-height);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  background: linear-gradient(90deg, rgba(255,255,255,0.95), rgba(250,250,255,0.9));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  transition: box-shadow 200ms ease, background-color 200ms ease, transform 120ms ease;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.header-logo {
+  height: 3rem;
+}
+.app-title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+.main-nav {
+  display: flex;
+  gap: 1rem;
+}
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.85;
+}
+.nav-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.app-header.scrolled {
+  box-shadow: 0 6px 18px rgba(10, 10, 10, 0.12);
+  border-bottom-color: rgba(0,0,0,0.08);
+}
+
+.app-header.hidden {
+  transform: translateY(-100%);
+}
