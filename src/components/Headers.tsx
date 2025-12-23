@@ -1,13 +1,8 @@
 import { useEffect, useState } from "react";
-import reactLogo from "../assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./Headers.css";
+import logo from "../assets/logo.svg";
 
-type Props = {
-  title?: string;
-};
-
-function Headers({ title = "Vite + React" }: Props) {
+function Headers() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -20,25 +15,17 @@ function Headers({ title = "Vite + React" }: Props) {
   return (
     <header className={`app-header ${scrolled ? "scrolled" : ""}`}>
       <div className="brand">
-        <a href="https://vite.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="header-logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="header-logo react" alt="React logo" />
-        </a>
-        <h1 className="app-title">{title}</h1>
+        <img src={logo} className="header-logo" alt="Logo" />
       </div>
       <nav className="main-nav" aria-label="Main navigation">
         <a href="#" onClick={(e) => e.preventDefault()} className="nav-link">
-          Home
+          Development & Integration
         </a>
-        <a
-          href="https://vite.dev"
-          target="_blank"
-          rel="noreferrer"
-          className="nav-link"
-        >
-          Docs
+        <a href="#" onClick={(e) => e.preventDefault()} className="nav-link">
+          UI & UX Design
+        </a>
+        <a href="#" onClick={(e) => e.preventDefault()} className="nav-link">
+          Connect
         </a>
       </nav>
     </header>
