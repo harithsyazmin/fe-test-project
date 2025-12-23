@@ -24,10 +24,6 @@
 .header-logo {
   height: 20px;
 }
-.app-title {
-  font-size: 1.25rem;
-  margin: 0;
-}
 .main-nav {
   display: flex;
   gap: 1rem;
@@ -46,8 +42,4 @@
 .app-header.scrolled {
   box-shadow: 0 6px 18px rgba(10, 10, 10, 0.12);
   border-bottom-color: rgba(0,0,0,0.08);
-}
-
-.app-header.hidden {
-  transform: translateY(-100%);
 }

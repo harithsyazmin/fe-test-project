@@ -17,7 +17,7 @@ const cards = [
     title: "Integration & API Management",
     subtitle: "Achieve digital transformation via an API management ecosystem",
     description:
-      "Venture into the mobile space with our mobility services. From mobile-first websites to mobile apps, we’re ready to help you develop a mobile solution that works.",
+      "Connect your systems, products and partners with secure, well-managed APIs. We help you design, build and govern integrations so data flows reliably across your entire ecosystem.",
     imgSrc: gfx2,
   },
   {
