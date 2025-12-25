@@ -111,31 +111,6 @@
   width: auto;
 }
 
-.card p {
-  margin: 0;
-  color: #475569;
-  font-size: 0.98rem;
-  line-height: 1.5;
-}
-
-.card-cta {
-  align-self: flex-start;
-  padding: 0.55rem 1.1rem;
-  background: #6366f1;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
-  margin-top: auto;
-}
-
-.card-cta:hover {
-  background: #4f46e5;
-  box-shadow: 0 10px 24px rgba(79, 70, 229, 0.3);
-  transform: translateY(-3px);
-}
 
 .bg-light {
   background: #f0f0f0;
@@ -220,10 +195,6 @@
   padding: 0 4px;
 }
 
-.form-input::placeholder,
-.form-textarea::placeholder {
-  color: #94a3b8;
-}
 
 .form-textarea {
   width: 100%;
@@ -277,7 +248,7 @@
 }
 
 .form-button-submit:disabled {
-  background: #94a3b8;
+  background: #0F4AB2;
   color: #ffffff;
   cursor: not-allowed;
   opacity: 0.6;
@@ -294,10 +265,12 @@
   }
 
   .form-button-row {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .form-button {
-    width: 100%;
+    flex: 1;
+    min-width: 120px;
   }
 }

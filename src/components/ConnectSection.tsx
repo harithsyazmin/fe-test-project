@@ -15,6 +15,15 @@ function ConnectSection() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const handleReset = () => {
+    setFormData({
+      name: "",
+      email: "",
+      contact: "",
+      message: "",
+    });
+  };
+
   const isFormValid = () => {
     return (
       formData.name.trim() !== "" &&
@@ -113,7 +122,11 @@ function ConnectSection() {
             ></textarea>
           </div>
           <div className="form-button-row">
-            <button type="reset" className="form-button form-button-reset">
+            <button
+              type="button"
+              className="form-button form-button-reset"
+              onClick={handleReset}
+            >
               Clear
             </button>
             <button
