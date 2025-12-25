@@ -95,9 +95,9 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: 8px;
-  flex-direction: column;
-  min-height: 12rem; /* keeps header (image + title/subtitle) same height across cards */
+  flex-direction: column; /* keeps header (image + title/subtitle) same height across cards */
   width: 100%;
+  min-height: 12rem;
 }
 
 .card h3 {
@@ -139,4 +139,111 @@
 
 .bg-light {
   background: #f0f0f0;
+}
+
+.bg-white {
+  background: #ffffff;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-input,
+.form-textarea {
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #0f172a;
+  background: #ffffff;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+  box-sizing: border-box;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #94a3b8;
+}
+
+.form-textarea {
+  width: 100%;
+  max-width: 100%;
+  resize: vertical;
+  min-height: 120px;
+  box-sizing: border-box;
+}
+
+.form-button-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.form-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 200ms ease;
+  box-sizing: border-box;
+}
+
+.form-button-reset {
+  background: #000000;
+  color: #0F4AB2;
+  border: 1px solid #0F4AB2;
+}
+
+.form-button-reset:hover {
+  background: #1a1a1a;
+  border-color: #0F4AB2;
+  color: #0F4AB2;
+}
+
+.form-button-submit {
+  background: #0F4AB2;
+  color: #ffffff;
+  border: none;
+}
+
+.form-button-submit:hover {
+  background: #0d3a8f;
+  box-shadow: 0 4px 12px rgba(15, 74, 178, 0.3);
+}
+
+@media (max-width: 640px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-button-row {
+    flex-direction: column;
+  }
+
+  .form-button {
+    width: 100%;
+  }
 }
