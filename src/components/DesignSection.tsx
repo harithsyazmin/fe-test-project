@@ -29,7 +29,7 @@ const cards = [
 
 function DesignSection() {
   return (
-    <main className="page bg-white">
+    <main id="design" className="page bg-white">
       <section className="content">
         <div className="section-heading">
           <span className="section-title">

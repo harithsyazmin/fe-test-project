@@ -45,7 +45,7 @@ const cards = [
 
 function DevelopmentSection() {
   return (
-    <main className="page bg-light">
+    <main id="development" className="page bg-light">
       <section className="content">
         <div className="section-heading">
           <span className="section-title">
